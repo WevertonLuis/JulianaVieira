@@ -1,0 +1,305 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #072AC8;
+  font-family: 'Satoshi', sans-serif;
+  opacity: 0; 
+  transition: opacity 1.5s ease-in-out;
+
+}
+
+/* animando o scroll */
+::-webkit-scrollbar {
+  width: 0px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff; 
+  border-radius: 10px;
+}
+
+.fade-in {
+opacity: 1;
+}
+
+/* Animação dos links */
+.navegaçao{
+margin: 0;
+padding-top: 1.5vmin;
+letter-spacing:.01px ;
+background-color: transparent;
+}
+
+.items{
+padding: 0;
+}
+
+.meio, .direita, .esquerda{
+padding: 0;
+}
+
+.meio{
+padding-right: 2.5vh;
+}
+
+.links{
+color: white;
+font-size: 2vh ;
+font-weight: 200;
+}
+
+.navbar a:hover {
+  color: transparent; 
+}
+
+/* Estilização da barra de navegação */
+
+.navegaçao{
+margin: 0;
+padding-top: 1.5vmin;
+letter-spacing:.01px ;
+background-color: transparent;
+}
+
+.links{
+color: white;
+font-size: 2vh ;
+font-weight: 200;
+}
+
+
+.principal{
+  font-weight: bold;
+}
+
+/* estilizando a pagina */
+.estilo-pagina {
+  position: relative;
+  color: #fafafa;
+}
+
+/* centralizando os textos */
+
+/* superior esquerdo */
+
+.texto-superior-esquerdo {
+  position: fixed;
+  top: 8vh; 
+  left: 20px;
+}
+
+.titulo-superior-esquerda{
+  font-size: 3.5vh ;
+  font-weight: bold;
+  letter-spacing: .05px;
+  padding-bottom: 0px;
+}
+
+.texto-superior-esquerda, .titulo-texto{
+  line-height: 2px;
+}
+
+.titulo-texto{
+font-weight: 100;
+}
+
+.texto{
+  padding-top: 20px;
+}
+
+/* superiror-direito */
+
+.texto-superior-direito {
+  position: fixed;
+  top: 8vh; 
+  right: 20px;
+  text-align: right;
+}
+
+
+.titulo-superior-direita {
+  font-size: 2vh;
+  font-weight: bold;
+  letter-spacing: .05px;
+  padding-bottom: 20px;
+}
+
+.texto-superior-direita{
+  line-height: 2px;
+}
+
+/* Inferior esquerdo */
+
+.texto-inferior-esquerdo{
+  position: fixed;
+  bottom: 8vh; 
+  right: 20px;
+}
+
+.titulo-inferior-esquerda, .titulo-inferior-esquerda2{
+  font-size: 2vh;
+  font-weight: bold;
+  letter-spacing: .05px;
+  padding-bottom: 5px;
+}
+
+.texto-inferior-esquerdo{
+  position: fixed;
+  bottom: 7.5svh;
+  left: 20px;    
+  line-height: 2px;
+}
+
+/* inferito direito */
+
+.texto-inferior-direito {
+  position: fixed;
+  bottom: 7svh;
+  right: 20px;  
+  text-align: right; 
+}
+
+.titulo-inferior-direita{
+  font-size: 2vh;
+  font-weight: bold;
+  letter-spacing: .05px;
+  padding-bottom: 20px;
+}
+
+.texto-inferior-direita{
+  line-height: 10px;
+  transition: 0.2s;
+}
+
+.texto-inferior-direita a{
+transition: 0.3s;
+}
+.texto-inferior-direito a:hover {
+  text-decoration: none;
+  color: #000000; 
+}
+
+.texto-inferior-direito a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* centralizando a imagem */
+.imagem-central img {
+width: 100%;
+max-width: 110vh; 
+height: auto;
+}
+
+footer {
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+  font-size: 1.5vh;
+}
+
+@media (max-width: 768px) {
+  .texto-superior-esquerdo,
+  .texto-superior-direito,
+  .texto-inferior-esquerdo,
+  .texto-inferior-direito {
+    position: static;
+    text-align: center; 
+    margin: 20px auto; 
+  }
+
+  
+  .titulo-superior-esquerda {
+    font-size: 2.5vh;
+    margin-top: 5vh;
+  }
+
+  .titulo-superior-direita{
+    padding-top: 3vh;
+    padding-bottom: 1px;
+  }
+
+  .titulo-inferior-esquerda{
+    padding-top: 3vh;
+  }
+
+  .titulo-inferior-direita{
+    padding-bottom: 1px;
+    padding-top: 3vh;
+  }
+
+  .titulo-superior-direita,
+  .titulo-inferior-esquerda,
+  .titulo-inferior-direita,
+  .texto-superior-esquerda,
+  .texto-superior-direita,
+  .texto-inferior-esquerdo,
+  .texto-inferior-direita,
+  .titulo-inferior-esquerda2 {
+    font-size: 1.5vh;
+  }
+
+ 
+  .imagem-central img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 414px) {
+  body {
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .texto-superior-esquerdo,
+  .texto-superior-direito,
+  .texto-inferior-esquerdo,
+  .texto-inferior-direito {
+    position: static;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .titulo-superior-esquerda {
+    font-size: 2.5vh;
+    margin-top: 10vh;
+  }
+
+  .titulo-superior-direita,
+  .titulo-inferior-esquerda,
+  .titulo-inferior-direita,
+  .texto-superior-esquerda,
+  .texto-superior-direita,
+  .texto-inferior-esquerdo,
+  .texto-inferior-direita,
+  .titulo-inferior-esquerda2 {
+    font-size: 1.5vh;
+  }
+
+  .titulo-superior-direita {
+    padding-top: 3vh;
+    padding-bottom: 1px;
+  }
+
+  .titulo-inferior-esquerda {
+    padding-top: 3vh;
+  }
+
+  .titulo-inferior-direita {
+    padding-bottom: 1px;
+    padding-top: 3vh;
+  }
+
+  .imagem-central img {
+    max-width: 100%;
+  }
+}
