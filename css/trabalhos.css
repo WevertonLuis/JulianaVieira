@@ -75,9 +75,15 @@ body {
 }
 
 .img-1 img {
-     width: 45%;
      height: auto;
-     margin-left: 50vh;
+     margin: 10px;
+ }
+
+.img-1 img {
+    width: 55%; 
+    height: auto; 
+    margin: 0 auto; 
+    display: block; 
  }
  
 .img-2 {
@@ -280,9 +286,12 @@ body {
     }
     
     .img-1 img {
-        width: 70%;
-        margin-left: 15%;
+        width: 55%; 
+        height: auto; 
+        margin: 0 auto; 
+        display: block; 
     }
+    
     .img-2 img {
         width: 60%;
         margin-right: 1%;
@@ -362,5 +371,4 @@ body {
         width: 66%;
         margin: 0 1%;
     }
-
 }
